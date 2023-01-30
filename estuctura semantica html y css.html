@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- sesion descripción página -->
+    <meta name="description" content="">
+    <meta name="author" content=" Crsitian Bolaños">
+    <title>cards con semantica html5</title>
+    <!-- fin sesion descripción página -->
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- Estructura de una página informativa basica "landingPages" semanticamente  -->
+
+<body>
+    <!-- Contenedor  de la cabezera de la página -->
+    <header id="header">
+        <nav class="nav">
+            <picture>
+                <img src="img.jpg" alt="logo" class="nav__logo">
+            </picture>
+            <!-- menu oculto para checkbok o para javaScript-->
+            <div id="toogle-menu" class="toggle-menu">
+                <!-- <label for="toogle-menu-checkbox"> -->
+                <!-- <img src="./asset/menu.png" alt="menu"> -->
+                <!-- Toggle menu x  iconos en el css -->
+                <div class="hamburger-icon"></div>
+                <!-- Toggle menu x  -->
+                <!--</label> -->
+            </div>
+            <!-- <input type="checkbox" class="toogle-menu__checkbox" id="toogle-menu-checkbox"> -->
+            <!-- fin menu oculto co checbok  -->
+            <ul id="nav__menu" class="nav__menu">
+                <li class="nav__menu__item"><a href="" class="nav__menu__link --active">link1</a></li>
+                <li class="nav__menu__item"><a href="" class="nav__menu__link">link2</a></li>
+                <li class="nav__menu__item"><a href="" class="nav__menu__link">link3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- fin contenedor  de la cabezera de la página -->
+
+    <!--contenedor main/ contenedor de todo el contenido de la página  -->
+    <main id="main">
+        <!--contenedor sesion/ contenedor de todo la sesion de estapágina  -->
+        <section class="cards">
+            <h2>Seccion cards</h2>
+
+            <!-- card con semantica forma 1 -->
+            <!--etiqueta <picture> no tan necesaria -->
+            <article class="card">
+                <picture>
+                    <img src="./assets/img/post3.webp" alt="post1" class="card__img">
+                </picture>
+                <div class="card-body">
+                    <h2 class="card__title">Title</h2>
+                    <p class="card__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Assumenda consectetur totam repudiandae, perferendis ullam
+                        laboriosam? Quos quis nihil laboriosam necessitatibus tempore
+                        adipisci totam sequi, facilis voluptates magni, dolores velit doloremque.
+                    </p>
+                    <a href="#" class="card__link">Read More</a>
+                </div>
+            </article>
+
+            <!-- card con semantica forma 2 clases bootstrap-->
+            <article class="card">
+                <div class="card h-100">
+                    <picture>
+                        <img src="./asset/img-portafolio/corporativa.webp" alt="post1" class="card-img-top img-fluid">
+                    </picture>
+                    <div class="card-body">
+                        <h3 class="card-title">Card title</h3>
+                        <p class="card-text">Some quick example text to build on the card title and make
+                            up the bulkjnsjdjss djsdhsjhaajxk
+                        </p>
+                        <a href="#" target="_blank" class="btn btn-outline-info">ver</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- card con semantica forma 3 -->
+            <article class="card">
+                <picture>
+                    <img src="./assets/img/post4.webp" alt="post1" class="card__img">
+                </picture>
+                <div class="card-body">
+                    <h2 class="card__title">Title</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Assumenda consectetur totam repudiandae, perferendis ullam
+                    </p>
+                </div>
+                <div class="card__footer">
+                    <a href="#">Read More</a>
+                </div>
+            </article>
+        </section>
+        <!-- fin contenedor sesion/ contenedor de todo la sesion de esta página  -->
+
+        <!--articulos pueden contener la etiqueta sesión, header,footer  y viceversamente  section puede contener
+        a article-->
+        <article>
+            <h2>Navegadores mas Utilizados 2021</h2>
+            <section>
+                <header>
+                    <h3>Chorome</h3>
+                </header>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, ad architecto. Amet aspernatur
+                    pariatur deleni</p>
+                <footer>derechos Chorome</footer>
+            </section>
+            <section>
+                <h3>Firefox</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, similique est, tempora numquam
+                    repellendus fugit autem fugiat ms.</p>
+            </section>
+        </article>
+
+        <!-- fin articulos pueden contener la etiqueta sesión-->
+
+        <!-- Artculos sin tanta relevancia  -->
+        <aside id="aside">
+            <h2 class="aside__title">Soy n aside</h2>
+            <article class="card">
+                <picture>
+                    <img src="./assets/img/post3.webp" alt="post1" class="card__img">
+                </picture>
+                <div class="card-body">
+                    <h2 class="card__title">Title</h2>
+                    <p class="card__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Assumenda consectetur totam repudiandae, perferendis ullam
+                        laboriosam? Quos quis nihil laboriosam necessitatibus tempore
+                        adipisci totam sequi, facilis voluptates magni, dolores velit doloremque.
+                    </p>
+                    <a href="#" class="card__link">Read More</a>
+                </div>
+            </article>
+        </aside>
+        <!-- fin Artculos sin tanta relevancia  -->
+
+
+
+    </main>
+    <!-- fin contenedor main/ contenedor de todo el contenido de la página  -->
+
+    <!--footer / pie de página  -->
+    <footer id="footer">
+        <div class="footer__text"></div>
+        <nav class="nav">
+            <picture>
+                <img src="ico.png" alt="icon" class="nav__img">
+            </picture>
+
+        </nav>
+        <div class="footer__text"></div>
+    </footer>
+
+    <div>
+        <small>Copyright &copy;2023</small>
+    </div>
+    <!-- fin footer / pie de página  -->
+
+    <!-- sesion javaScript -->
+    <script src="js.js"></script>
+    <!--fin sesion javaScript -->
+</body>
+
+</html>
